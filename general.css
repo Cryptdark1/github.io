@@ -1,13 +1,25 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+
+    outline: 1px solid lime;
+}
 body{
     background: radial-gradient(circle at top, #0a0a0a, #000);
     background-color: rgb(12, 12, 23);
     color: lightblue;
     font-family: Arial;
     min-width: 320px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
    
     
 }
-section{
+/* section{
                 border: 1px;
                 background-color: black;
                 border-color: blue;
@@ -15,7 +27,7 @@ section{
                 display: flex;
                 width: 300px;
                 border-radius: 10px;
-            }
+            } */
             .header{
                 display: flex;
                 justify-content: space-between;
@@ -62,9 +74,7 @@ section{
                 flex-direction: row;
                 text-align: top;
             }*/
-            p{
-                margin-right: 6px;
-            }
+           
             .honour-hall-head{
                 display: flex;
                 flex-direction: column;
@@ -120,7 +130,7 @@ section{
                 
                 display: flex;
                 flex-direction: column;
-                width: 400px;
+               /* width: 400px;*/
                 align-items: center;
                 text-align: center;
                 margin-bottom: 50px;
@@ -131,11 +141,17 @@ section{
                 background-color: transparent;
                 box-shadow: 0 8px 32px rgb(0, 0, 0, 0.4), 0 0 20px rgba(100, 150, 255, 0.15);
                 border-radius:10px;
-                height: 200px;
+               /* height: 200px;*/
                 background: rgba(20, 25, 40, 0.6);
                 transition: all 0.3s ease;
-                padding-bottom: 50px;
+                
+                max-width: 100%;
+                margin: 0 auto;
+                 padding-left: 30px;
+                padding-right:30px;
+                
             }
+            
              .projects-main:hover,
             .skill-section:hover{
                 transform: translate(-8px);
@@ -150,8 +166,8 @@ section{
                 justify-content: space-evenly;
             }
             .project-n{
-                padding-bottom: 30px;
                 line-height: 2;
+               
             }
             .projects-tittle,
             .skills-tittle{
@@ -269,10 +285,10 @@ section{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                margin-right: 400px;
+                margin-right: 300px;
                 margin-bottom: 60px;
                 margin-top: 60px;
-                margin-left: 400px;
+                margin-left: 300px;
                
             }
             .cuffee{
@@ -322,16 +338,50 @@ section{
         
           }
          @media (max-width: 768px){
+            .name{
+                font-size: 30px;
+            }
+            .skill-section{
+                margin-top: 20px;
+            }
+            .projects-main{
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            p{
+                font-size: 14px;
+                max-width: 100%;
+            }
             .text-pic{
                 
                 flex-direction: column;
-                margin-left: 50px;
-                margin-right: 50px;
+                /*margin-left: 50px;
+                margin-right: 50px;*/
+                margin: 0;
+                padding: 0;
+                max-width: 100%;
+                margin-left: 5px;
+                margin-right: 5px;
                  
             }
-          
+            .name-intro{
+                margin: 0;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+            .intro-text{
+                font-size: 12px;
+               width: auto;
+               margin: 0;
+             max-width: 100%;
+            }
+           
             body{
                 align-items: center;
+            }
+            .honour-hall-head{
+                padding: 0 40px;
             }
             .navbar{
                 display: none;
@@ -357,13 +407,21 @@ section{
             
             .box-section{
                 flex-direction: column;
-               margin-left: 100px;
+              /* margin-left: 100px;
                 margin-bottom: 60px;
-                margin-left: 180px;
+                margin-left: 180px;*/
             }
             img{
                 max-width: 100%;
                 height: auto  ;
+            }
+
+            @media(max-width: 480px){
+           .text-pic{
+                
+              margin: 10px;
+                 
+            }
             }
           }
           .hire-button{
@@ -376,15 +434,15 @@ section{
           .hire-button:hover{
             background-color: green;
             color: white;
+
+            
             
           }
-          @media(max-width: 480px){
-            .box-section{
-                margin-left: 4px;
-            }
+          
+
            
-          }
-          @media(max-width: 1024px){
+          
+      /*    @media(max-width: 1024px){
         .text-pic{
             margin: 10px 5px;
             
@@ -395,10 +453,12 @@ section{
 
            
           }
-          @media(max-width: 1440px){
+        */
+          @media(min-width: 1440px){
          .text-pic{
             margin-left: 100px;
             margin-right: 100px;
          }
          
           }
+          
