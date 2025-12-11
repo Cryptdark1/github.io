@@ -3,7 +3,7 @@
 *::before{
     box-sizing: border-box;
 
-    outline: 1px solid lime;
+    /* outline: 1px solid lime; */
 }
 body{
     background: radial-gradient(circle at top, #0a0a0a, #000);
@@ -462,3 +462,4 @@ body{
          
           }
           
+
